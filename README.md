@@ -1,2 +1,41 @@
 # Data_Structs_RSA_Cryptosystem
 Advanced Data Structures Project 1
+
+This will log the various components of the code and will keep track of what is completed.
+
+-Transform ASCII -> base 27 ints
+Ex. "Test" -> "20 5 19 20"
+
+-Convert from base 27 -> Decimal
+
+-Convert from Decimal -> base 27 -> ACII
+(See project insructions)
+
+-Naive primality testing
+only loop to sqrt(n) iterations
+
+-random prime number generator
+
+-euclids ext gcd algorithm 
+
+-create p & q and calculate n = pq
+
+-compute totient of n. i.e phi(n) = (p-1)(q-1)
+
+
+-get user to enter e, the public key. 1 < e < phi(n)
+Ask to redo input if e is not relatively prime to n. Repeat till gcd(e,n)/(e,phi(n)) = 1.
+
+-compute the modular multiplicative inverse. i.e. d = e^(-1) mod(phi(n))
+
+Encryption algorithm
+Text (M) -> decimal (m)
+C = m^e mod(n)
+
+Decryption algorithm
+C^d = (m^e)^d = m mod n 
+i.e. P = raise cipher text to the d power mod n.
+decimal -> text
+
+output p q n M C P
+
